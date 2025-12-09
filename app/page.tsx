@@ -12,7 +12,7 @@ export default function Home() {
     {
       title: "Note drop",
       category: "Note",
-      description: "Note drop is a platform for sharing notes.",
+      description: "Note drop is a platform for sharing notes with just a link.",
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
