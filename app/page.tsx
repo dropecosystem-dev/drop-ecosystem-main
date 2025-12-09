@@ -35,6 +35,15 @@ export default function Home() {
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
     },
+    {
+      title: "pdf drop",
+      category: "converter",
+      description: "pdf drop is a platform for converting pdf files.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: true,
+    },
   ];
 
   return (
