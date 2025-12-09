@@ -20,7 +20,7 @@ import { useState } from "react";
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const apis = [
+  const apps = [
     {
       title: "Note drop",
       category: "Note",
@@ -67,12 +67,12 @@ export default function Home() {
     },
   ];
 
-  const filteredApis = apis.filter((api) => {
+  const filteredApps = apps.filter((app) => {
     const query = searchQuery.toLowerCase();
     return (
-      api.title.toLowerCase().includes(query) ||
-      api.category.toLowerCase().includes(query) ||
-      api.description.toLowerCase().includes(query)
+      app.title.toLowerCase().includes(query) ||
+      app.category.toLowerCase().includes(query) ||
+      app.description.toLowerCase().includes(query)
     );
   });
 
@@ -102,7 +102,7 @@ export default function Home() {
         {/* Featured Section */}
         <div className="mb-20">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredApis.map((api, index) => (
+            {filteredApps.map((api, index) => (
               <ApiCard
                 key={index}
                 title={api.title}
@@ -116,7 +116,7 @@ export default function Home() {
             ))}
           </div>
 
-          {filteredApis.length === 0 && (
+          {filteredApps.length === 0 && (
             <div className="text-center text-muted-foreground py-12">
               No applications found matching "{searchQuery}"
             </div>
