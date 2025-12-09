@@ -9,6 +9,7 @@ interface ApiCardProps {
     Icon: LucideIcon;
     iconColor?: string; // e.g. "text-orange-500"
     iconBg?: string;    // e.g. "bg-orange-100"
+    comingSoon?: boolean;
 }
 
 export function ApiCard({
@@ -18,6 +19,7 @@ export function ApiCard({
     Icon,
     iconColor = "text-foreground",
     iconBg = "bg-muted",
+    comingSoon = false,
 }: ApiCardProps) {
     return (
         <Card className="group relative flex flex-col justify-between overflow-hidden border-border bg-card transition-all hover:shadow-md dark:border-zinc-800">
@@ -37,8 +39,11 @@ export function ApiCard({
 
                 {/* Hover Action */}
                 <div className="absolute inset-x-0 bottom-0 flex translate-y-full flex-col justify-end p-6 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <Button className="w-full cursor-pointer bg-foreground text-background hover:bg-foreground/90">
-                        Visit Website
+                    <Button
+                        disabled={comingSoon}
+                        className={`w-full cursor-pointer bg-foreground text-background hover:bg-foreground/90 ${comingSoon ? 'cursor-not-allowed opacity-50' : ''}`}
+                    >
+                        {comingSoon ? "Coming Soon..." : "Visit Website"}
                     </Button>
                 </div>
             </CardContent>

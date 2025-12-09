@@ -24,6 +24,16 @@ export default function Home() {
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: true,
+    },
+    {
+      title: "yt drop",
+      category: "downloader",
+      description: "yt drop is a platform for downloading youtube videos.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: true,
     },
   ];
 
@@ -60,6 +70,7 @@ export default function Home() {
                 Icon={api.Icon}
                 iconColor={api.iconColor}
                 iconBg={api.iconBg}
+                comingSoon={api.comingSoon}
               />
             ))}
           </div>
