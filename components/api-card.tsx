@@ -12,8 +12,8 @@ interface ApiCardProps {
     category: string;
     description: string;
     Icon: LucideIcon;
-    iconColor?: string; // e.g. "text-orange-500"
-    iconBg?: string;    // e.g. "bg-orange-100"
+    iconColor?: string;
+    iconBg?: string;   
     comingSoon?: boolean;
     href?: string;
 }
