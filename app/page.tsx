@@ -4,15 +4,6 @@ import { ApiCard } from "@/components/api-card";
 import { Input } from "@/components/ui/input";
 import {
   Search,
-  Dog,
-  MessageCircle,
-  CreditCard,
-  Type,
-  Car,
-  CloudRain,
-  ListTodo,
-  Mail,
-  Smartphone,
   NotepadText,
 } from "lucide-react";
 import { useState } from "react";
@@ -28,6 +19,7 @@ export default function Home() {
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
+      href: "https://notedrop.projecthouse.in",
     },
     {
       title: "App drop",
@@ -37,6 +29,7 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
+      href: "#",
     },
     {
       title: "yt drop",
@@ -46,6 +39,7 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
+      href: "#",
     },
     {
       title: "pdf drop",
@@ -55,6 +49,7 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
+      href: "#",
     },
     {
       title: "File drop",
@@ -64,6 +59,7 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
+      href: "#",
     },
   ];
 
@@ -112,6 +108,7 @@ export default function Home() {
                 iconColor={api.iconColor}
                 iconBg={api.iconBg}
                 comingSoon={api.comingSoon}
+                href={api.href}
               />
             ))}
           </div>
