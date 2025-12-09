@@ -4,10 +4,22 @@ import { ApiCard } from "@/components/api-card";
 import { Input } from "@/components/ui/input";
 import {
   Search,
+  Dog,
+  MessageCircle,
+  CreditCard,
+  Type,
+  Car,
+  CloudRain,
+  ListTodo,
+  Mail,
+  Smartphone,
   NotepadText,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   const apis = [
     {
       title: "Note drop",
@@ -44,7 +56,25 @@ export default function Home() {
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
     },
+    {
+      title: "File drop",
+      category: "sharing",
+      description: "pdf drop is a platform for converting pdf files.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: true,
+    },
   ];
+
+  const filteredApis = apis.filter((api) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      api.title.toLowerCase().includes(query) ||
+      api.category.toLowerCase().includes(query) ||
+      api.description.toLowerCase().includes(query)
+    );
+  });
 
   return (
     <div className="min-h-screen bg-background px-4 py-8 font-sans transition-colors md:px-8 lg:px-16">
@@ -63,6 +93,8 @@ export default function Home() {
               type="text"
               placeholder="Search applications"
               className="h-12 rounded-full border-zinc-200 bg-card pl-10 text-base shadow-sm backdrop-blur-sm transition-all focus-visible:ring-zinc-400 dark:border-zinc-800"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
         </div>
@@ -70,7 +102,7 @@ export default function Home() {
         {/* Featured Section */}
         <div className="mb-20">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {apis.map((api, index) => (
+            {filteredApis.map((api, index) => (
               <ApiCard
                 key={index}
                 title={api.title}
@@ -83,6 +115,12 @@ export default function Home() {
               />
             ))}
           </div>
+
+          {filteredApis.length === 0 && (
+            <div className="text-center text-muted-foreground py-12">
+              No applications found matching "{searchQuery}"
+            </div>
+          )}
         </div>
       </main>
     </div>
