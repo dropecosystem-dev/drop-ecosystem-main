@@ -37,7 +37,7 @@ export function ApiCard({
 
                 {/* Hover Action */}
                 <div className="absolute inset-x-0 bottom-0 flex translate-y-full flex-col justify-end p-6 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <Button className="w-full bg-foreground text-background hover:bg-foreground/90">
+                    <Button className="w-full cursor-pointer bg-foreground text-background hover:bg-foreground/90">
                         Visit Website
                     </Button>
                 </div>
