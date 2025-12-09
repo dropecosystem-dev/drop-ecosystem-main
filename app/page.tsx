@@ -17,6 +17,14 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
     },
+    {
+      title: "App drop",
+      category: "Apps",
+      description: "App drop is a mobile application for downloading and managing open-source apps.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+    },
   ];
 
   return (
