@@ -22,6 +22,16 @@ export default function Home() {
       href: "https://notedrop.projecthouse.in",
     },
     {
+      title: "pdf drop",
+      category: "converter",
+      description: "pdf drop is a platform for converting pdf files.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: false,
+      href: "https://pdf.dropeco.dev",
+    },
+    {
       title: "App drop",
       category: "Apps",
       description: "App drop is a mobile application for downloading and managing open-source apps.",
@@ -40,16 +50,6 @@ export default function Home() {
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
       href: "#",
-    },
-    {
-      title: "pdf drop",
-      category: "converter",
-      description: "pdf drop is a platform for converting pdf files.",
-      Icon: NotepadText,
-      iconColor: "text-white-500",
-      iconBg: "bg-white-100 dark:bg-white-900/20",
-      comingSoon: false,
-      href: "https://pdf.dropeco.dev",
     },
     {
       title: "File drop",
