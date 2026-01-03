@@ -2,12 +2,7 @@
 
 import { ApiCard } from "@/components/api-card";
 import { Input } from "@/components/ui/input";
-import {
-  Search,
-  NotepadText,
-  QrCode,
-  FileText
-} from "lucide-react";
+import { Search, NotepadText, QrCode, FileText, Share2 } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,8 +11,9 @@ export default function Home() {
   const apps = [
     {
       title: "Note drop",
-      category: "Note",
-      description: "Note drop is a platform for sharing notes with just a link.",
+      category: "note",
+      description:
+        "Note drop is a platform for sharing notes with just a link.",
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
@@ -25,8 +21,9 @@ export default function Home() {
     },
     {
       title: "QR drop",
-      category: "generator",
-      description: "QR drop is a platform for generating premium qr codes for free.",
+      category: "generate",
+      description:
+        "QR drop is a platform for generating premium qr codes for free.",
       Icon: QrCode,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
@@ -35,7 +32,7 @@ export default function Home() {
     },
     {
       title: "pdf drop",
-      category: "converter",
+      category: "convert",
       description: "pdf drop is a platform for converting pdf files.",
       Icon: FileText,
       iconColor: "text-white-500",
@@ -44,34 +41,35 @@ export default function Home() {
       href: "https://pdf.dropeco.dev",
     },
     {
-      title: "App drop",
-      category: "Apps",
-      description: "App drop is a mobile application for downloading and managing open-source apps.",
-      Icon: NotepadText,
+      title: "File drop",
+      category: "share",
+      description: "pdf drop is a platform for converting pdf files.",
+      Icon: Share2,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
-      href: "#",
+      href: "https://share.dropeco.dev",
     },
     {
       title: "yt drop",
-      category: "downloader",
+      category: "download",
       description: "yt drop is a platform for downloading youtube videos.",
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
-      comingSoon: true,
-      href: "#",
+      comingSoon: false,
+      href: "https://yt.dropeco.dev",
     },
     {
-      title: "File drop",
-      category: "sharing",
-      description: "pdf drop is a platform for converting pdf files.",
+      title: "App drop",
+      category: "apps",
+      description:
+        "App drop is a mobile application for downloading and managing open-source apps.",
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: true,
-      href: "#",
+      href: "https://app.dropeco.dev",
     },
   ];
 
