@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import {
   Search,
   NotepadText,
+  QrCode,
+  FileText
 } from "lucide-react";
 import { useState } from "react";
 
@@ -25,7 +27,7 @@ export default function Home() {
       title: "QR drop",
       category: "generator",
       description: "QR drop is a platform for generating premium qr codes for free.",
-      Icon: NotepadText,
+      Icon: QrCode,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: false,
@@ -35,7 +37,7 @@ export default function Home() {
       title: "pdf drop",
       category: "converter",
       description: "pdf drop is a platform for converting pdf files.",
-      Icon: NotepadText,
+      Icon: FileText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: false,
