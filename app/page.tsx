@@ -19,7 +19,17 @@ export default function Home() {
       Icon: NotepadText,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
-      href: "https://notedrop.projecthouse.in",
+      href: "https://note.dropeco.dev",
+    },
+    {
+      title: "QR drop",
+      category: "generator",
+      description: "QR drop is a platform for generating premium qr codes for free.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: false,
+      href: "https://qr.dropeco.dev",
     },
     {
       title: "pdf drop",
