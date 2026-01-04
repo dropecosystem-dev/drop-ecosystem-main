@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://dropeco.dev/</loc>
-        <lastmod>2026-01-03</lastmod>
+        <lastmod>2026-01-04</lastmod>
+    </url>
+    <url>
+        <loc>https://note.dropeco.dev/</loc>
+        <lastmod>2026-01-04</lastmod>
+    </url>
+    <url>
+        <loc>https://qr.dropeco.dev/</loc>
+        <lastmod>2026-01-04</lastmod>
+    </url>
+    <url>
+        <loc>https://file.dropeco.dev/</loc>
+        <lastmod>2026-01-04</lastmod>
+    </url>
+    <url>
+        <loc>https://pdf.dropeco.dev/</loc>
+        <lastmod>2026-01-04</lastmod>
     </url>
 </urlset>

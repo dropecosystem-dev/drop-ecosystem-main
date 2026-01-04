@@ -47,8 +47,8 @@ export default function Home() {
       Icon: Share2,
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
-      comingSoon: true,
-      href: "https://share.dropeco.dev",
+      comingSoon: false,
+      href: "https://file.dropeco.dev",
     },
     {
       title: "yt drop",
