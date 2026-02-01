@@ -2,7 +2,7 @@
 
 import { ApiCard } from "@/components/api-card";
 import { Input } from "@/components/ui/input";
-import { Search, NotepadText, QrCode, FileText, Share2 } from "lucide-react";
+import { Search, NotepadText, QrCode, FileText, Share2, RotateCcwKey } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -59,6 +59,17 @@ export default function Home() {
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: false,
       href: "https://yt.dropeco.dev",
+    },
+    {
+      title: "Password drop",
+      category: "apps",
+      description:
+        "Password drop is a mobile application for generating strong passwords.",
+      Icon: RotateCcwKey,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: true,
+      href: "https://passgen.dropeco.dev",
     },
     {
       title: "App drop",
