@@ -15,6 +15,7 @@ interface ApiCardProps {
     iconColor?: string;
     iconBg?: string;   
     comingSoon?: boolean;
+    maintenance?: boolean;
     href?: string;
 }
 
@@ -26,6 +27,7 @@ export function ApiCard({
     iconColor = "text-foreground",
     iconBg = "bg-muted",
     comingSoon = false,
+    maintenance = false,
     href = "#",
 }: ApiCardProps) {
     const [isTapped, setIsTapped] = useState(false);
@@ -63,6 +65,13 @@ export function ApiCard({
                             className="w-full cursor-not-allowed bg-foreground text-background opacity-50 hover:bg-foreground/90"
                         >
                             Coming Soon...
+                        </Button>
+                    ) : maintenance ? (
+                        <Button
+                            disabled
+                            className="w-full cursor-not-allowed bg-foreground text-background opacity-50 hover:bg-foreground/90"
+                        >
+                            ongoing maintenance...
                         </Button>
                     ) : (
                         <Button

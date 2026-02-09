@@ -31,6 +31,16 @@ export default function Home() {
       href: "https://qr.dropeco.dev",
     },
     {
+      title: "yt drop",
+      category: "download",
+      description: "yt drop is a platform for downloading youtube videos.",
+      Icon: NotepadText,
+      iconColor: "text-white-500",
+      iconBg: "bg-white-100 dark:bg-white-900/20",
+      comingSoon: false,
+      href: "https://yt.dropeco.dev",
+    },
+    {
       title: "pdf drop",
       category: "convert",
       description: "pdf drop is a platform for converting pdf files.",
@@ -38,6 +48,7 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: false,
+      maintenance: true,
       href: "https://pdf.dropeco.dev",
     },
     {
@@ -48,17 +59,8 @@ export default function Home() {
       iconColor: "text-white-500",
       iconBg: "bg-white-100 dark:bg-white-900/20",
       comingSoon: false,
+      maintenance: true,
       href: "https://file.dropeco.dev",
-    },
-    {
-      title: "yt drop",
-      category: "download",
-      description: "yt drop is a platform for downloading youtube videos.",
-      Icon: NotepadText,
-      iconColor: "text-white-500",
-      iconBg: "bg-white-100 dark:bg-white-900/20",
-      comingSoon: false,
-      href: "https://yt.dropeco.dev",
     },
     {
       title: "Password drop",
